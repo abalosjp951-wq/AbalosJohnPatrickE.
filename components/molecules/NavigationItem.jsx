@@ -1,0 +1,1 @@
+export function NavigationItem({href,children}){return <a href={href}>{children}</a>}

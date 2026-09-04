@@ -1,0 +1,1 @@
+export function Icon({children,label}){return <span className="icon" aria-label={label} role="img">{children}</span>}

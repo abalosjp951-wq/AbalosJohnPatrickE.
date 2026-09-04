@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pangasinan Heritage Digital Showcase</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">Pangasinan Heritage</a>
+      <nav aria-label="Main navigation">
+        <a href="#heritage">Heritage Sites</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container heroGrid">
+        <div>
+          <p class="eyebrow">Pangasinan Heritage Digital Showcase</p>
+          <h1>Discover the Heritage of <span>Pangasinan.</span></h1>
+          <p>Explore iconic destinations and cultural landmarks through a fast, accessible, mobile-first experience.</p>
+          <div class="actions"><a class="button" href="#heritage">Explore Now</a><a class="secondary" href="#about">About the Project</a></div>
+          <form id="searchForm" class="search" role="search">
+            <label for="siteSearch" class="srOnly">Search heritage sites</label>
+            <input id="siteSearch" placeholder="Search Hundred Islands, Bolinao..." />
+            <button class="button" type="submit">Search</button>
+          </form>
+        </div>
+        <div class="heroImage"><img src="https://www.ourpangasinan.com/wp-content/uploads/2023/02/hundred-islands-1.jpg" alt="Aerial view of Hundred Islands in Pangasinan"><div class="badge"><strong>3 featured sites</strong><span>Explore Pangasinan</span></div></div>
+      </div>
+    </section>
+    <section id="heritage" class="container section">
+      <div class="sectionHead"><div><p class="eyebrow">FEATURED DESTINATIONS</p><h2>Places worth remembering</h2></div><p>Discover natural wonders and historic landmarks across the province.</p></div>
+      <div class="filters"><button class="filter active" data-filter="">All Sites</button><button class="filter" data-filter="alaminos">Alaminos</button><button class="filter" data-filter="bolinao">Bolinao</button><button class="filter" data-filter="balungao">Balungao</button></div>
+      <div class="grid" id="siteGrid">
+        <article class="card" data-search="hundred islands alaminos city"><div class="visual"><img src="https://www.ourpangasinan.com/wp-content/uploads/2023/02/hundred-islands-1.jpg" alt="Hundred Islands National Park"><span>Alaminos City</span></div><div class="cardBody"><small>ALAMINOS CITY</small><h3>Hundred Islands</h3><p>A celebrated island cluster known for limestone formations, clear waters, and outdoor adventures.</p><a class="learn" target="_blank" rel="noreferrer" href="https://www.alaminoscity.gov.ph/I-Choose-Hundred-Islands/hundred-islands-national-park.html">Learn more →</a></div></article>
+        <article class="card" data-search="bolinao lighthouse bolinao"><div class="visual"><img src="https://rowelgabriel.github.io/Pangasinan/images/cbl1.jpg" alt="Cape Bolinao Lighthouse"><span>Bolinao</span></div><div class="cardBody"><small>BOLINAO</small><h3>Bolinao Lighthouse</h3><p>A historic coastal landmark offering memorable views of the sea and Pangasinan's western landscape.</p><a class="learn" target="_blank" rel="noreferrer" href="https://elgu-bolinao-pangasinan-news.e.gov.ph/about">Learn more →</a></div></article>
+        <article class="card" data-search="balungao hot spring balungao"><div class="visual"><img src="https://seepangasinan.com/wp-content/uploads/2022/08/IMG_7382-scaled-1980x1320.jpg" alt="Balungao Hot and Cold Springs"><span>Balungao</span></div><div class="cardBody"><small>BALUNGAO</small><h3>Balungao Hot Spring</h3><p>A hot-and-cold spring destination surrounded by greenery and outdoor adventure activities.</p><a class="learn" target="_blank" rel="noreferrer" href="https://www.balungao.gov.ph/?p=408">Learn more →</a></div></article>
+      </div>
+      <p id="empty" class="empty" hidden>No heritage site matched your search.</p>
+    </section>
+    <section id="about" class="about"><div class="container section"><p class="eyebrow">ABOUT THE SHOWCASE</p><h2>Built for mobile-first exploration.</h2><p>This project demonstrates a modular, responsive, accessible tourism interface using reusable Atomic Design components.</p></div></section>
+  </main>
+  <footer><div class="container">Pangasinan Heritage Digital Showcase</div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

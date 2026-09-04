@@ -1,0 +1,1 @@
+export const colorTokens={primary:"#1F5B46",ink:"#17324D",surface:"#F7FAF8",accent:"#F2D6A2",border:"#E2EBE6"};
